@@ -5,8 +5,8 @@ class Sunshine < Formula
   homepage "https://app.lizardbyte.dev"
   url "https://github.com/LizardByte/Sunshine.git",
       # is tag required? won't be available until after a release is published
-      tag:      "v0.23.1",
-      revision: "8b21db64fb8e8ffb9c24a412dbc66b7410699211"
+      tag:      "v0.21.0",
+      revision: "5bca024899eff8f50e04c1723aeca25fc5e542ca"
   license "GPL-3.0-only"
   head "https://github.com/LizardByte/Sunshine.git", branch: "nightly"
 
@@ -41,6 +41,6 @@ class Sunshine < Formula
   end
   test do
     # test that version numbers match
-    assert_match "Sunshine version: v0.23.1", shell_output("#{bin}/sunshine --version").strip
+    assert_match "Sunshine version: v0.21.0", shell_output("#{bin}/sunshine --version").strip
   end
 end
